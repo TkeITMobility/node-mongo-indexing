@@ -1,0 +1,31 @@
+{
+  "name": "node-mongo-indexing",
+  "version": "1.0.1",
+  "description": "A node module to apply indexes easily to our mongo collections",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "~3.4.1",
+    "env-var": "~1.0.0",
+    "mongo-utils": "git+https://github.com/evanshortiss/mongo-utils.git#0.2.0",
+    "proxyquire": "~1.7.4",
+    "tke-logger": "git+https://github.com/TkeITMobility/tke-cloud-logger.git#v0.4.0"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.1"
+  },
+  "scripts": {
+    "test": "env NODE_PATH=. NODE_ENV=test mocha ./test -s 8000 -t 10000 -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TkeITMobility/node-mongo-indexing.git"
+  },
+  "author": "Matt Hill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TkeITMobility/node-mongo-indexing/issues"
+  },
+  "homepage": "https://github.com/TkeITMobility/node-mongo-indexing#readme"
+}
