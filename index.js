@@ -7,7 +7,7 @@ var Promise = require('bluebird')
 
 var db = Promise.promisifyAll(
   mongo.getDatabaseManager({
-    mongoUrl: env('FH_MONGODB_CONN_URL', 'mongodb://127.0.0.1:27017')
+    mongoUrl: env('FH_MONGODB_CONN_URL', 'mongodb://127.0.0.1:27017/FH_LOCAL')
   })
 );
 
